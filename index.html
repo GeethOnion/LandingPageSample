@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <head>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta charset="UTF-8" />
+    <title>Aviation English</title>
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .list-type1 {
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      .list-type1 ol {
+        counter-reset: li;
+        list-style: none;
+        *list-style: decimal;
+        font-size: 15px;
+        font-family: "Raleway", sans-serif;
+        padding: 0;
+        margin-bottom: 4em;
+      }
+      .list-type1 ol ol {
+        margin: 0 0 0 2em;
+      }
+
+      li {
+        color: #fff;
+      }
+
+      .list-type1 a {
+        position: relative;
+        display: block;
+        padding: 0.4em 0.4em 0.4em 2em;
+        *padding: 0.4em;
+        margin: 0.5em 0;
+        background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #24243e,
+          #302b63,
+          #0f0c29
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #24243e,
+          #302b63,
+          #0f0c29
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .list-type1 a:hover {
+        background: #0052d4; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #6fb1fc,
+          #4364f7,
+          #0052d4
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #6fb1fc,
+          #4364f7,
+          #0052d4
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        text-decoration: none;
+        transform: scale(1.1);
+      }
+
+      .list-type1 a:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        left: -1.3em;
+        top: 50%;
+        margin-top: -1.3em;
+        background: #cc2b5e; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #753a88,
+          #cc2b5e
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #753a88,
+          #cc2b5e
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        height: 2.2em;
+        width: 2.2em;
+        line-height: 1.5em;
+        border: 0.3em solid #fff;
+        text-align: center;
+        font-weight: bold;
+        -moz-border-radius: 2em;
+        -webkit-border-radius: 2em;
+        border-radius: 2em;
+        color: #fff;
+      }
+      table {
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        margin: auto;
+        font-size: 200%;
+        width: 100%;
+        max-width: 400px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #000;
+        transition: all 0.1s ease-in-out;
+      }
+      td {
+        padding: 10px;
+        text-align: center;
+        line-height: 110%;
+      }
+      table:hover {
+        transform: scale(1.1);
+      }
+      .sale-flash {
+        background-color: #f00;
+        animation: flash 1s infinite;
+        animation-direction: alternate;
+      }
+      @keyframes flash {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: rgb(136, 0, 0);
+        }
+      }
+      .imgdiv,
+      .screenshot {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 600px;
+        cursor: pointer;
+      }
+      .screenshot {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .screenshot:hover {
+        box-shadow: 0px 0px 20px rgb(182, 182, 182);
+      }
+      .box {
+        padding: 20px;
+        background-color: rgb(248, 248, 248);
+        border: 1px solid lightblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Start Header Area -->
+    <header class="header_area sticky-header">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light main_box">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="index.html"
+              ><img src="img/logo.png" width="100" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item submenu dropdown active">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Online courses</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Online course1</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">online course2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Apps</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ICAO Requirments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+      <div class="container">
+        <div
+          class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end"
+        >
+          <div class="col-first">
+            <h1>English for Pilots</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Blog Area =================-->
+    <br />
+    <div>
+      <div>
+        <table>
+          <tr>
+            <td class="sale-flash">SPECIAL OFFER</td>
+            <td>Buy 1 Get 2 Free for 49.99$!</td>
+          </tr>
+        </table>
+        <br /><br />
+      </div>
+      <div class="text-center">
+        <img class="imgdiv" src="img/EnglishforPilots.png" alt="" /><br /><br />
+        <h2>
+          Get ahead in your professional career. Improve safety.
+        </h2>
+      </div>
+      <div class="list-type1">
+        <ol>
+          <li>
+            <a
+              >Progress STEP BY STEP through our 3 levels taking you through a
+              series of relevant units.</a
+            >
+          </li>
+          <li>
+            <a>Comprehensive, focused English course for Pilots</a>
+          </li>
+          <li><a>Learn quickly, efficiently and conveniently.</a></li>
+          <li>
+            <a
+              >A unique curriculum with smart technological features to keep you
+              motivated to study</a
+            >
+          </li>
+          <li>
+            <a
+              >Vocabulary, Listening, Grammar, Reading and Speaking
+              components</a
+            >
+          </li>
+          <li>
+            <a
+              >Monitor your progress through our analytical features measuring
+              how you are doing</a
+            >
+          </li>
+          <li><a>Certificate at the end of each Level.</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div>
+      <table>
+        <tr>
+          <td class="sale-flash">SPECIAL OFFER</td>
+          <td>Buy 1 Get 2 Free for 49.99$!</td>
+        </tr>
+      </table>
+      <br /><br />
+    </div>
+
+    <div style="width: 100%; max-width: 600px; margin: auto; color: #222;">
+      <h3>We offer 3 courses for pilots:</h3>
+      <p>
+        It is round 80 hours of study material for Pilots. Included are 10 Units
+        of Vocabulary, Grammar, Listening, Reading, Speaking and a Test after
+        each Unit.
+      </p>
+      <div class="box">
+        <h4>1) ICAO Aviation English Complete Course</h4>
+        <p style="margin-left: 20px;">
+          We understand that obtaining a proficient level of English is
+          essential for your career as a pilot. We meet pilots every week who
+          have lost great opportunities because they did not have the English
+          proficiency certificate. We have a team of teachers who are native
+          speakers, pilots and ex-examiners who prepared the best collection of
+          material for your preparation for this very important test. Trust our
+          quality. Our course material offers a very intensive program. We try
+          cover as much technical vocabulary, grammar, comprehension and fluency
+          as possible.
+          <br /><br />
+          We understand that often your career depends on this test and so we
+          always work in a focused, intense environment to ensure the best
+          results for you.<br /><br />
+
+          <b>Studying at home:</b> The possibility of studying at home is
+          perfect for flexible schedules. We also worked as pilots, so we know
+          that a pilot's schedule is not routine like in other professions,
+          making it harder to attend regular schools of english.<br /><br />
+        </p>
+        <b style="margin-left: 20px;"
+          >Some of the topics offerd in this study conttent:</b
+        ><br />
+        <div style="margin-left: 40px;">
+          • Landing / Take off<br />
+          • En route<br />
+          • Medical emergencies <br />
+          • Fire <br />
+          • Security problems <br />
+          • Meteorology <br />
+          • Navigation <br />
+          • Picture description <br />
+          • Basic Radiotelephony <br />
+          • General Background questions <br />
+          • Test Simulation <br />
+          • etc<br />
+        </div>
+      </div>
+      <br />
+      <div class="box">
+        <h4>2) ICAO Aviation English Test Simulation</h4>
+        <p style="margin-left: 20px;">
+          Simulation tests permits you to know your weakneses to know what you
+          need to improve before your tests. The English Language Proficiency
+          Test is one of the most important tests for Pilots. Don`t take a risk,
+          be totally prepared for the test.
+        </p>
+      </div>
+      <br />
+      <div class="box">
+        <h4>3) Radiotelephony</h4>
+        <p style="margin-left: 20px;">
+          Simulation tests permits you to know your weakneses to know what you
+          need to improve before your tests. The English Language Proficiency
+          Test is one of the most important tests for Pilots. Don`t take a risk,
+          be totally prepared for the test.
+        </p>
+
+        <b style="margin-left: 20px;">Topics include:</b>
+        <div style="margin-left: 40px;">
+          • Radiotelphony basics <br />
+          • Routine ground situations – start up, push back, taxi, take off
+          <br />
+          • Non Routine situations <br />
+          • Emergencies <br />
+        </div>
+      </div>
+      <br />
+      <div class="box">
+        When you purchase our material expect courses that are:<br />
+        <div style="margin-left: 40px;">
+          •Well prepared<br />
+          •Intensive<br />
+          •Productive<br />
+          •Focused<br />
+        </div>
+      </div>
+      <div>
+        ​
+        <h4>
+          We are really committed to helping you achieve your objectives as
+          quickly as possible.
+        </h4>
+        <br />
+        <h6>Apps: click to access our apps</h6>
+        <div style="margin-left: 40px;">
+          <a href="#">•Itunes App Aviation English Test Simulation</a><br />
+          <a href="#">•Google Play Aviation English Test Simulation</a><br />
+          <a href="#">•Itunes Aviation English Portuguese Translator</a><br />
+          <a href="#">•Google Play Aviation English Portuguese Translator</a
+          ><br />
+        </div>
+      </div>
+    </div>
+    <br />
+    <div>
+      <table>
+        <tr>
+          <td class="sale-flash">SPECIAL OFFER</td>
+          <td>Buy 1 Get 2 Free for 49.99$!</td>
+        </tr>
+      </table>
+      <br /><br />
+    </div>
+    <div class="imgdiv">
+      <a href="./img/1.png"><img src="./img/1.png" class="screenshot" /></a
+      ><br />
+      <hr />
+      <a href="./img/2.png"><img src="./img/2.png" class="screenshot" /></a
+      ><br />
+      <hr />
+      <a href="./img/3.png"><img src="./img/3.png" class="screenshot" /></a
+      ><br />
+      <hr />
+      <a href="./img/4.png"><img src="./img/4.png" class="screenshot" /></a
+      ><br />
+      <hr />
+      <a href="./img/5.png"><img src="./img/5.png" class="screenshot" /></a
+      ><br />
+      <hr />
+      <a href="./img/6.png"><img src="./img/6.png" class="screenshot" /></a
+      ><br />
+      <hr />
+    </div>
+    <br />
+    <div class="text-center box">
+      <h3>Contact Us</h3>
+      <br />
+      <label for="Name">Name:</label><br />
+      <input type="text" id="Name" size="40" /><br />
+      <label for="Name">Email:</label><br />
+      <input type="text" id="email" size="40" /><br />
+      <label for="Name">Phone:</label><br />
+      <input type="text" id="phone" size="40" /><br />
+      <label for="comment">Comment:</label><br />
+      <textarea id="comment" rows="6" cols="40"></textarea><br />
+      <input type="submit" /><br />
+    </div>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
