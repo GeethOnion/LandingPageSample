@@ -204,9 +204,17 @@
         background-color: rgb(248, 248, 248);
         border: 1px solid lightblue;
       }
-      .test {
-        box-shadow: 10px 10px;
-      }
+      @font-face {
+font-family: "Ailerons";
+src: url("./fonts/Ailerons-Typeface.otf")format('opentype');
+}
+      .banner {
+  width: 100%;
+  padding:60px 0;
+  text-align: center;
+background:#0052d4;
+  color: rgb(255, 255, 255);
+}
     </style>
   </head>
 
@@ -323,7 +331,16 @@
     >
       <br /><br />
       <div>
-        <div class="text-center jumboturn">
+        <section class="banner">
+          <h1 style="font-family:'Ailerons';color: rgb(255, 255, 255);text-shadow:5px 5px 5px #0f0c29;" class="display-3">English For Pilots</h1>
+          <hr style="
+          width: 80%;
+          max-width: 400px;
+          margin: auto;
+          border-top: 4px solid #000;"></hr>
+          <!--<a class="btn-bgstroke">Call To Action</a>-->
+      </section><br>
+        <!--<div class="text-center jumboturn">
           <div
             style="
               font-family: 'Open Sans', sans-serif;
@@ -346,7 +363,7 @@
           "
         />
         <br /><br />
-        <br />
+        <br />-->
         <div>
           <table>
             <tr>
