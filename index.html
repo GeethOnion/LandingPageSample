@@ -88,7 +88,10 @@
         text-decoration: none;
         transform: scale(1.1);
       }
-
+      @font-face {
+        font-family: "Ailerons";
+        src: url("./fonts/Ailerons-Typeface.otf") format("opentype");
+      }
       .list-type1 a:before {
         content: counter(li);
         counter-increment: li;
@@ -204,20 +207,47 @@
         background-color: rgb(248, 248, 248);
         border: 1px solid lightblue;
       }
-      @font-face {
-        font-family: "Ailerons";
-        src: url("./fonts/Ailerons-Typeface.otf") format("opentype");
-      }
+
       .banner {
         width: 100%;
         padding: 60px 0;
         text-align: center;
         background: #a12828;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
       }
       @media only screen and (max-width: 600px) {
         .banner {
           padding: 15px !important;
+        }
+      }
+      .grid-container {
+        display: grid;
+        /* grid-template-columns: auto auto auto; */
+        grid-template-columns: auto auto auto;
+        align-self: center;
+        background-color: #c5c2c2;
+        padding: 0px;
+        align-items: center;
+      }
+      .grid-item {
+        background-color: #c5c2c2;
+        padding: 5px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 550px) {
+        #banner-text {
+          font-size: 220% !important;
+        }
+      }
+      @media only screen and (max-width: 300px) {
+        .grid-container {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .banner {
+          padding: 0 !important;
+          font-weight: bolder;
         }
       }
     </style>
@@ -335,29 +365,40 @@
       "
     >
       <br /><br />
-      <div>
-        <section class="banner" style="background-color: #303030;">
+
+      <section class="banner" style="background-color: #c5c2c2;">
+        <div class="grid-container">
+          <div class="grid-item">
+            <hr style="max-width: 500px; border-top: 2px solid #000;" />
+          </div>
+
           <div
+            class="grid-item"
             style="
-              font-family: 'Ailerons';
-              color: rgb(255, 255, 255);
+              font-family: Ailerons;
+              color: #000;
               font-size: 400%;
               line-height: 0.8em;
               letter-spacing: -0.19em;
             "
+            id="banner-text"
           >
             English For Pilots
           </div>
-          <!--
+          <div class="grid-item">
+            <hr style="border-top: 2px solid #000;" />
+          </div>
+        </div>
+        <!--
           <hr style="
           width: 80%;
           max-width: 400px;
           margin: auto;
           border-top: 2px solid #fff;"></hr>
           <a class="btn-bgstroke">Call To Action</a>-->
-        </section>
-        <br />
-        <!--<div class="text-center jumboturn">
+      </section>
+      <br />
+      <!--<div class="text-center jumboturn">
           <div
             style="
               font-family: 'Open Sans', sans-serif;
@@ -381,6 +422,78 @@
         />
         <br /><br />
         <br />-->
+      <div style="padding: 20px;">
+        <div>
+          <div>
+            <table>
+              <tr>
+                <td class="sale-flash">SPECIAL OFFER</td>
+                <td>Combo Package: Access ALL 3 Pilot Courses</td>
+              </tr>
+              <tr>
+                <td
+                  colspan="2"
+                  class="text-center"
+                  style="font-size: 12px; background-color: #222;"
+                >
+                  English for Pilots / ICAO Test Simulation / Radiotelephony
+                </td>
+              </tr>
+            </table>
+
+            <br /><br />
+            <div style="margin: auto; color: #fff;" class="full-access">
+              <h3 style="color: #fff; @media screen {}">
+                Start the ENGLISH FOR PILOTS course NOW!
+              </h3>
+            </div>
+            <br />
+          </div>
+          <div class="text-center">
+            <img
+              class="imgdiv"
+              src="img/EnglishforPilots.png"
+              alt=""
+            /><br /><br />
+            <h2>
+              Get ahead in your professional career. Improve safety.
+            </h2>
+          </div>
+          <div class="list-type1">
+            <ol>
+              <li>
+                <a
+                  >Progress STEP BY STEP through our 3 levels taking you through
+                  a series of relevant units.</a
+                >
+              </li>
+              <li>
+                <a>Comprehensive, focused English course for Pilots</a>
+              </li>
+              <li><a>Learn quickly, efficiently and conveniently.</a></li>
+              <li>
+                <a
+                  >A unique curriculum with smart technological features to keep
+                  you motivated to study</a
+                >
+              </li>
+              <li>
+                <a
+                  >Vocabulary, Listening, Grammar, Reading and Speaking
+                  components</a
+                >
+              </li>
+              <li>
+                <a
+                  >Monitor your progress through our analytical features
+                  measuring how you are doing</a
+                >
+              </li>
+              <li><a>Certificate at the end of each Level.</a></li>
+            </ol>
+          </div>
+        </div>
+
         <div>
           <table>
             <tr>
@@ -397,267 +510,201 @@
               </td>
             </tr>
           </table>
-
           <br /><br />
-          <div style="margin: auto; color: #fff;" class="full-access">
-            <h3 style="color: #fff; @media screen {}">
+          <div
+            style="width: 100%; max-width: 600px; margin: auto; color: #222;"
+            class="full-access"
+          >
+            <h3 style="color: #fff;">
               Start the ENGLISH FOR PILOTS course NOW!
             </h3>
           </div>
           <br />
         </div>
-        <div class="text-center">
-          <img
-            class="imgdiv"
-            src="img/EnglishforPilots.png"
-            alt=""
-          /><br /><br />
-          <h2>
-            Get ahead in your professional career. Improve safety.
-          </h2>
-        </div>
-        <div class="list-type1">
-          <ol>
-            <li>
-              <a
-                >Progress STEP BY STEP through our 3 levels taking you through a
-                series of relevant units.</a
-              >
-            </li>
-            <li>
-              <a>Comprehensive, focused English course for Pilots</a>
-            </li>
-            <li><a>Learn quickly, efficiently and conveniently.</a></li>
-            <li>
-              <a
-                >A unique curriculum with smart technological features to keep
-                you motivated to study</a
-              >
-            </li>
-            <li>
-              <a
-                >Vocabulary, Listening, Grammar, Reading and Speaking
-                components</a
-              >
-            </li>
-            <li>
-              <a
-                >Monitor your progress through our analytical features measuring
-                how you are doing</a
-              >
-            </li>
-            <li><a>Certificate at the end of each Level.</a></li>
-          </ol>
-        </div>
-      </div>
 
-      <div>
-        <table>
-          <tr>
-            <td class="sale-flash">SPECIAL OFFER</td>
-            <td>Combo Package: Access ALL 3 Pilot Courses</td>
-          </tr>
-          <tr>
-            <td
-              colspan="2"
-              class="text-center"
-              style="font-size: 12px; background-color: #222;"
-            >
-              English for Pilots / ICAO Test Simulation / Radiotelephony
-            </td>
-          </tr>
-        </table>
-        <br /><br />
-        <div
-          style="width: 100%; max-width: 600px; margin: auto; color: #222;"
-          class="full-access"
-        >
-          <h3 style="color: #fff;">
-            Start the ENGLISH FOR PILOTS course NOW!
-          </h3>
-        </div>
-        <br />
-      </div>
-
-      <div style="width: 100%; max-width: 600px; margin: auto; color: #222;">
-        <h3>We offer 3 courses for pilots:</h3>
-        <p>
-          It is round 80 hours of study material for Pilots. Included are 10
-          Units of Vocabulary, Grammar, Listening, Reading, Speaking and a Test
-          after each Unit.
-        </p>
-        <div class="box">
-          <h4>1) ICAO Aviation English Complete Course</h4>
-          <p style="margin-left: 20px;">
-            We understand that obtaining a proficient level of English is
-            essential for your career as a pilot. We meet pilots every week who
-            have lost great opportunities because they did not have the English
-            proficiency certificate. We have a team of teachers who are native
-            speakers, pilots and ex-examiners who prepared the best collection
-            of material for your preparation for this very important test. Trust
-            our quality. Our course material offers a very intensive program. We
-            try cover as much technical vocabulary, grammar, comprehension and
-            fluency as possible.
-            <br /><br />
-            We understand that often your career depends on this test and so we
-            always work in a focused, intense environment to ensure the best
-            results for you.<br /><br />
-
-            <b>Studying at home:</b> The possibility of studying at home is
-            perfect for flexible schedules. We also worked as pilots, so we know
-            that a pilot's schedule is not routine like in other professions,
-            making it harder to attend regular schools of english.<br /><br />
+        <div style="width: 100%; max-width: 600px; margin: auto; color: #222;">
+          <h3>We offer 3 courses for pilots:</h3>
+          <p>
+            It is round 80 hours of study material for Pilots. Included are 10
+            Units of Vocabulary, Grammar, Listening, Reading, Speaking and a
+            Test after each Unit.
           </p>
-          <b style="margin-left: 20px;"
-            >Some of the topics offerd in this study conttent:</b
-          ><br />
-          <div style="margin-left: 40px;">
-            • Landing / Take off<br />
-            • En route<br />
-            • Medical emergencies <br />
-            • Fire <br />
-            • Security problems <br />
-            • Meteorology <br />
-            • Navigation <br />
-            • Picture description <br />
-            • Basic Radiotelephony <br />
-            • General Background questions <br />
-            • Test Simulation <br />
-            • etc<br />
-          </div>
-        </div>
-        <br />
-        <div class="box">
-          <h4>2) ICAO Aviation English Test Simulation</h4>
-          <p style="margin-left: 20px;">
-            Simulation tests permits you to know your weakneses to know what you
-            need to improve before your tests. The English Language Proficiency
-            Test is one of the most important tests for Pilots. Don`t take a
-            risk, be totally prepared for the test.
-          </p>
-        </div>
-        <br />
-        <div class="box">
-          <h4>3) Radiotelephony</h4>
-          <p style="margin-left: 20px;">
-            Simulation tests permits you to know your weakneses to know what you
-            need to improve before your tests. The English Language Proficiency
-            Test is one of the most important tests for Pilots. Don`t take a
-            risk, be totally prepared for the test.
-          </p>
+          <div class="box">
+            <h4>1) ICAO Aviation English Complete Course</h4>
+            <p style="margin-left: 20px;">
+              We understand that obtaining a proficient level of English is
+              essential for your career as a pilot. We meet pilots every week
+              who have lost great opportunities because they did not have the
+              English proficiency certificate. We have a team of teachers who
+              are native speakers, pilots and ex-examiners who prepared the best
+              collection of material for your preparation for this very
+              important test. Trust our quality. Our course material offers a
+              very intensive program. We try cover as much technical vocabulary,
+              grammar, comprehension and fluency as possible.
+              <br /><br />
+              We understand that often your career depends on this test and so
+              we always work in a focused, intense environment to ensure the
+              best results for you.<br /><br />
 
-          <b style="margin-left: 20px;">Topics include:</b>
-          <div style="margin-left: 40px;">
-            • Radiotelphony basics <br />
-            • Routine ground situations – start up, push back, taxi, take off
-            <br />
-            • Non Routine situations <br />
-            • Emergencies <br />
-          </div>
-        </div>
-        <br />
-        <div class="box">
-          When you purchase our material expect courses that are:<br />
-          <div style="margin-left: 40px;">
-            •Well prepared<br />
-            •Intensive<br />
-            •Productive<br />
-            •Focused<br />
-          </div>
-        </div>
-        <div>
-          ​
-          <h4>
-            We are really committed to helping you achieve your objectives as
-            quickly as possible.
-          </h4>
-          <br />
-          <h6>Apps: click to access our apps</h6>
-          <div style="margin-left: 40px;">
-            <a href="#">•Itunes App Aviation English Test Simulation</a><br />
-            <a href="#">•Google Play Aviation English Test Simulation</a><br />
-            <a href="#">•Itunes Aviation English Portuguese Translator</a><br />
-            <a href="#">•Google Play Aviation English Portuguese Translator</a
+              <b>Studying at home:</b> The possibility of studying at home is
+              perfect for flexible schedules. We also worked as pilots, so we
+              know that a pilot's schedule is not routine like in other
+              professions, making it harder to attend regular schools of
+              english.<br /><br />
+            </p>
+            <b style="margin-left: 20px;"
+              >Some of the topics offerd in this study conttent:</b
             ><br />
+            <div style="margin-left: 40px;">
+              • Landing / Take off<br />
+              • En route<br />
+              • Medical emergencies <br />
+              • Fire <br />
+              • Security problems <br />
+              • Meteorology <br />
+              • Navigation <br />
+              • Picture description <br />
+              • Basic Radiotelephony <br />
+              • General Background questions <br />
+              • Test Simulation <br />
+              • etc<br />
+            </div>
+          </div>
+          <br />
+          <div class="box">
+            <h4>2) ICAO Aviation English Test Simulation</h4>
+            <p style="margin-left: 20px;">
+              Simulation tests permits you to know your weakneses to know what
+              you need to improve before your tests. The English Language
+              Proficiency Test is one of the most important tests for Pilots.
+              Don`t take a risk, be totally prepared for the test.
+            </p>
+          </div>
+          <br />
+          <div class="box">
+            <h4>3) Radiotelephony</h4>
+            <p style="margin-left: 20px;">
+              Simulation tests permits you to know your weakneses to know what
+              you need to improve before your tests. The English Language
+              Proficiency Test is one of the most important tests for Pilots.
+              Don`t take a risk, be totally prepared for the test.
+            </p>
+
+            <b style="margin-left: 20px;">Topics include:</b>
+            <div style="margin-left: 40px;">
+              • Radiotelphony basics <br />
+              • Routine ground situations – start up, push back, taxi, take off
+              <br />
+              • Non Routine situations <br />
+              • Emergencies <br />
+            </div>
+          </div>
+          <br />
+          <div class="box">
+            When you purchase our material expect courses that are:<br />
+            <div style="margin-left: 40px;">
+              •Well prepared<br />
+              •Intensive<br />
+              •Productive<br />
+              •Focused<br />
+            </div>
+          </div>
+          <div>
+            ​
+            <h4>
+              We are really committed to helping you achieve your objectives as
+              quickly as possible.
+            </h4>
+            <br />
+            <h6>Apps: click to access our apps</h6>
+            <div style="margin-left: 40px;">
+              <a href="#">•Itunes App Aviation English Test Simulation</a><br />
+              <a href="#">•Google Play Aviation English Test Simulation</a
+              ><br />
+              <a href="#">•Itunes Aviation English Portuguese Translator</a
+              ><br />
+              <a href="#">•Google Play Aviation English Portuguese Translator</a
+              ><br />
+            </div>
           </div>
         </div>
-      </div>
-      <br />
-      <div>
-        <table>
-          <tr>
-            <td class="sale-flash">SPECIAL OFFER</td>
-            <td>Combo Package: Access ALL 3 Pilot Courses</td>
-          </tr>
-          <tr>
-            <td
-              colspan="2"
-              class="text-center"
-              style="font-size: 12px; background-color: #222;"
-            >
-              English for Pilots / ICAO Test Simulation / Radiotelephony
-            </td>
-          </tr>
-        </table>
-        <br /><br />
-        <div
-          style="width: 100%; max-width: 600px; margin: auto; color: #222;"
-          class="full-access"
-        >
-          <h3 style="color: #fff;">
-            Start the ENGLISH FOR PILOTS course NOW!
-          </h3>
-        </div>
         <br />
-      </div>
-      <div class="imgdiv">
-        <h2 class="text-center">
-          Below are examples of what the course looks like:
-        </h2>
-        <br /><br />
-        <h4>Profile Page</h4>
-        <a href="./img/1.png"><img src="./img/1.png" class="screenshot" /></a
-        ><br />
-        <hr />
-        <h4>Progress Analysis Page</h4>
-        <a href="./img/2.png"><img src="./img/2.png" class="screenshot" /></a
-        ><br />
-        <hr />
-        <h4>Vocabulary Exercises</h4>
-        <a href="./img/3.png"><img src="./img/3.png" class="screenshot" /></a
-        ><br />
-        <hr />
-        <!--<h4>Label 4</h4>
+        <div>
+          <table>
+            <tr>
+              <td class="sale-flash">SPECIAL OFFER</td>
+              <td>Combo Package: Access ALL 3 Pilot Courses</td>
+            </tr>
+            <tr>
+              <td
+                colspan="2"
+                class="text-center"
+                style="font-size: 12px; background-color: #222;"
+              >
+                English for Pilots / ICAO Test Simulation / Radiotelephony
+              </td>
+            </tr>
+          </table>
+          <br /><br />
+          <div
+            style="width: 100%; max-width: 600px; margin: auto; color: #222;"
+            class="full-access"
+          >
+            <h3 style="color: #fff;">
+              Start the ENGLISH FOR PILOTS course NOW!
+            </h3>
+          </div>
+          <br />
+        </div>
+        <div class="imgdiv">
+          <h2 class="text-center">
+            Below are examples of what the course looks like:
+          </h2>
+          <br /><br />
+          <h4>Profile Page</h4>
+          <a href="./img/1.png"><img src="./img/1.png" class="screenshot" /></a
+          ><br />
+          <hr />
+          <h4>Progress Analysis Page</h4>
+          <a href="./img/2.png"><img src="./img/2.png" class="screenshot" /></a
+          ><br />
+          <hr />
+          <h4>Vocabulary Exercises</h4>
+          <a href="./img/3.png"><img src="./img/3.png" class="screenshot" /></a
+          ><br />
+          <hr />
+          <!--<h4>Label 4</h4>
         <a href="./img/4.png"><img src="./img/4.png" class="screenshot" /></a
         ><br />
         <hr />-->
-        <h4>Grammar Exercises</h4>
-        <a href="./img/5.png"><img src="./img/5.png" class="screenshot" /></a
-        ><br />
-        <hr />
-        <h4>Tests</h4>
-        <a href="./img/6.png"><img src="./img/6.png" class="screenshot" /></a
-        ><br />
-        <hr />
-      </div>
-      <br />
-      <div
-        class="text-center box"
-        style="width: 100%; max-width: 600px; margin: auto; color: #222;"
-      >
-        <h3>Contact Us</h3>
+          <h4>Grammar Exercises</h4>
+          <a href="./img/5.png"><img src="./img/5.png" class="screenshot" /></a
+          ><br />
+          <hr />
+          <h4>Tests</h4>
+          <a href="./img/6.png"><img src="./img/6.png" class="screenshot" /></a
+          ><br />
+          <hr />
+        </div>
         <br />
-        <label for="Name">Name:</label><br />
-        <input type="text" id="Name" size="30" /><br />
-        <label for="Name">Email:</label><br />
-        <input type="text" id="email" size="30" /><br />
-        <label for="Name">Phone:</label><br />
-        <input type="text" id="phone" size="30" /><br />
-        <label for="comment">Comment:</label><br />
-        <textarea id="comment" rows="6" cols="30"></textarea><br />
-        <a class="genric-btn info" style="color: #fff;">Submit</a>
+        <div
+          class="text-center box"
+          style="width: 100%; max-width: 600px; margin: auto; color: #222;"
+        >
+          <h3>Contact Us</h3>
+          <br />
+          <label for="Name">Name:</label><br />
+          <input type="text" id="Name" size="30" /><br />
+          <label for="Name">Email:</label><br />
+          <input type="text" id="email" size="30" /><br />
+          <label for="Name">Phone:</label><br />
+          <input type="text" id="phone" size="30" /><br />
+          <label for="comment">Comment:</label><br />
+          <textarea id="comment" rows="6" cols="30"></textarea><br />
+          <a class="genric-btn info" style="color: #fff;">Submit</a>
+        </div>
+        <br />
       </div>
-      <br />
     </div>
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
