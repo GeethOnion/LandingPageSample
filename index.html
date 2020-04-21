@@ -205,16 +205,21 @@
         border: 1px solid lightblue;
       }
       @font-face {
-font-family: "Ailerons";
-src: url("./fonts/Ailerons-Typeface.otf")format('opentype');
-}
+        font-family: "Ailerons";
+        src: url("./fonts/Ailerons-Typeface.otf") format("opentype");
+      }
       .banner {
-  width: 100%;
-  padding:60px 0;
-  text-align: center;
-background:#0052d4;
-  color: rgb(255, 255, 255);
-}
+        width: 100%;
+        padding: 60px 0;
+        text-align: center;
+        background: #a12828;
+        color: rgb(255, 255, 255);
+      }
+      @media only screen and (max-width: 600px) {
+        .banner {
+          padding: 15px !important;
+        }
+      }
     </style>
   </head>
 
@@ -331,15 +336,27 @@ background:#0052d4;
     >
       <br /><br />
       <div>
-        <section class="banner">
-          <h1 style="font-family:'Ailerons';color: rgb(255, 255, 255);text-shadow:5px 5px 5px #0f0c29;" class="display-3">English For Pilots</h1>
+        <section class="banner" style="background-color: #303030;">
+          <div
+            style="
+              font-family: 'Ailerons';
+              color: rgb(255, 255, 255);
+              font-size: 400%;
+              line-height: 0.8em;
+              letter-spacing: -0.19em;
+            "
+          >
+            English For Pilots
+          </div>
+          <!--
           <hr style="
           width: 80%;
           max-width: 400px;
           margin: auto;
-          border-top: 4px solid #000;"></hr>
-          <!--<a class="btn-bgstroke">Call To Action</a>-->
-      </section><br>
+          border-top: 2px solid #fff;"></hr>
+          <a class="btn-bgstroke">Call To Action</a>-->
+        </section>
+        <br />
         <!--<div class="text-center jumboturn">
           <div
             style="
@@ -368,7 +385,7 @@ background:#0052d4;
           <table>
             <tr>
               <td class="sale-flash">SPECIAL OFFER</td>
-              <td>Buy 1 Get 2 Free for 49.99$!</td>
+              <td>Combo Package: Access ALL 3 Pilot Courses</td>
             </tr>
             <tr>
               <td
@@ -376,16 +393,15 @@ background:#0052d4;
                 class="text-center"
                 style="font-size: 12px; background-color: #222;"
               >
-                Get ALL 3 Pilot courses: English for pilots, ICAO Test
-                Simulation, Radiotelephony for just $49.99!
+                English for Pilots / ICAO Test Simulation / Radiotelephony
               </td>
             </tr>
           </table>
 
           <br /><br />
           <div style="margin: auto; color: #fff;" class="full-access">
-            <h3 style="color: #fff;">
-              Get full access to the Online course NOW!
+            <h3 style="color: #fff; @media screen {}">
+              Start the ENGLISH FOR PILOTS course NOW!
             </h3>
           </div>
           <br />
@@ -439,7 +455,7 @@ background:#0052d4;
         <table>
           <tr>
             <td class="sale-flash">SPECIAL OFFER</td>
-            <td>Buy 1 Get 2 Free for 49.99$!</td>
+            <td>Combo Package: Access ALL 3 Pilot Courses</td>
           </tr>
           <tr>
             <td
@@ -447,8 +463,7 @@ background:#0052d4;
               class="text-center"
               style="font-size: 12px; background-color: #222;"
             >
-              Get ALL 3 Pilot courses: English for pilots, ICAO Test Simulation,
-              Radiotelephony for just $49.99!
+              English for Pilots / ICAO Test Simulation / Radiotelephony
             </td>
           </tr>
         </table>
@@ -458,7 +473,7 @@ background:#0052d4;
           class="full-access"
         >
           <h3 style="color: #fff;">
-            Get full access to the Online course NOW!
+            Start the ENGLISH FOR PILOTS course NOW!
           </h3>
         </div>
         <br />
@@ -572,7 +587,7 @@ background:#0052d4;
         <table>
           <tr>
             <td class="sale-flash">SPECIAL OFFER</td>
-            <td>Buy 1 Get 2 Free for 49.99$!</td>
+            <td>Combo Package: Access ALL 3 Pilot Courses</td>
           </tr>
           <tr>
             <td
@@ -580,8 +595,7 @@ background:#0052d4;
               class="text-center"
               style="font-size: 12px; background-color: #222;"
             >
-              Get ALL 3 Pilot courses: English for pilots, ICAO Test Simulation,
-              Radiotelephony for just $49.99!
+              English for Pilots / ICAO Test Simulation / Radiotelephony
             </td>
           </tr>
         </table>
@@ -591,7 +605,7 @@ background:#0052d4;
           class="full-access"
         >
           <h3 style="color: #fff;">
-            Get full access to the Online course NOW!
+            Start the ENGLISH FOR PILOTS course NOW!
           </h3>
         </div>
         <br />
