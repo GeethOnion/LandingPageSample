@@ -160,7 +160,6 @@
       .full-access {
         background-color: rgb(255, 0, 0);
         width: 95%;
-        max-width: 400px;
         animation: flasha 1s infinite;
         animation-direction: alternate;
         text-align: center;
@@ -210,23 +209,22 @@
 
       .banner {
         width: 100%;
-        padding: 60px 0;
+        padding: 5px 0;
         text-align: center;
         background: #a12828;
         color: rgb(0, 0, 0);
       }
       @media only screen and (max-width: 600px) {
         .banner {
-          padding: 15px !important;
+          padding: 10px !important;
         }
       }
       .grid-container {
         display: grid;
-        /* grid-template-columns: auto auto auto; */
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto 230px auto;
         align-self: center;
         background-color: #c5c2c2;
-        padding: 0px;
+        padding: 5px;
         align-items: center;
       }
       .grid-item {
@@ -240,11 +238,15 @@
         #banner-text {
           font-size: 220% !important;
         }
+        .grid-container {
+          grid-template-columns: auto 170px auto;
+        }
       }
       @media only screen and (max-width: 300px) {
         .grid-container {
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-template-columns: auto 150px auto;
         }
+
         .banner {
           padding: 0 !important;
           font-weight: bolder;
@@ -377,9 +379,10 @@
             style="
               font-family: Ailerons;
               color: #000;
-              font-size: 400%;
+              font-size: 300%;
               line-height: 0.8em;
-              letter-spacing: -0.19em;
+              margin-left: -10px;
+              letter-spacing: -0.3em;
             "
             id="banner-text"
           >
@@ -389,39 +392,9 @@
             <hr style="border-top: 2px solid #000;" />
           </div>
         </div>
-        <!--
-          <hr style="
-          width: 80%;
-          max-width: 400px;
-          margin: auto;
-          border-top: 2px solid #fff;"></hr>
-          <a class="btn-bgstroke">Call To Action</a>-->
       </section>
       <br />
-      <!--<div class="text-center jumboturn">
-          <div
-            style="
-              font-family: 'Open Sans', sans-serif;
-              font-size: 400%;
-              line-height: 1.1em;
-              color: #000;
-            "
-          >
-            English for Pilots
-          </div>
 
-          <br />
-        </div>
-        <hr
-          style="
-            width: 80%;
-            max-width: 400px;
-            margin: auto;
-            border-top: 4px solid #000;
-          "
-        />
-        <br /><br />
-        <br />-->
       <div style="padding: 20px;">
         <div>
           <div>
@@ -442,10 +415,13 @@
             </table>
 
             <br /><br />
-            <div style="margin: auto; color: #fff;" class="full-access">
-              <h3 style="color: #fff; @media screen {}">
-                Start the ENGLISH FOR PILOTS course NOW!
-              </h3>
+            <div
+              style="width: 100%; max-width: 500px; margin: auto; color: #fff;"
+              class="full-access"
+            >
+              <h4 style="color: #fff;">
+                Click to Start the ENGLISH FOR PILOTS course NOW!
+              </h4>
             </div>
             <br />
           </div>
@@ -455,9 +431,9 @@
               src="img/EnglishforPilots.png"
               alt=""
             /><br /><br />
-            <h2>
+            <h4>
               Get ahead in your professional career. Improve safety.
-            </h2>
+            </h4>
           </div>
           <div class="list-type1">
             <ol>
@@ -512,17 +488,17 @@
           </table>
           <br /><br />
           <div
-            style="width: 100%; max-width: 600px; margin: auto; color: #222;"
+            style="width: 100%; max-width: 500px; margin: auto; color: #222;"
             class="full-access"
           >
-            <h3 style="color: #fff;">
-              Start the ENGLISH FOR PILOTS course NOW!
-            </h3>
+            <h4 style="color: #fff;">
+              Click to Start the ENGLISH FOR PILOTS course NOW!
+            </h4>
           </div>
           <br />
         </div>
 
-        <div style="width: 100%; max-width: 600px; margin: auto; color: #222;">
+        <div style="width: 100%; max-width: 500px; margin: auto; color: #222;">
           <h3>We offer 3 courses for pilots:</h3>
           <p>
             It is round 80 hours of study material for Pilots. Included are 10
@@ -647,18 +623,19 @@
           </table>
           <br /><br />
           <div
-            style="width: 100%; max-width: 600px; margin: auto; color: #222;"
+            style="width: 100%; max-width: 500px; margin: auto; color: #222;"
             class="full-access"
           >
-            <h3 style="color: #fff;">
-              Start the ENGLISH FOR PILOTS course NOW!
-            </h3>
+            <h4 style="color: #fff;">
+              Click to Start the ENGLISH FOR PILOTS course NOW!
+            </h4>
           </div>
           <br />
         </div>
         <div class="imgdiv">
           <h2 class="text-center">
-            Below are examples of what the course looks like:
+            Below are examples of what the ENGLISH FOR PILOTS courses looks
+            like:
           </h2>
           <br /><br />
           <h4>Profile Page</h4>
